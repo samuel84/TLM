@@ -46,9 +46,9 @@ public class AlarmExActivity extends AppCompatActivity {
 
         mAlarmMgr.set(AlarmManager.RTC, System.currentTimeMillis() + 5000, pIntent);
 
-        int soundId = sound.load(this, R.raw.siren, 1);
+        //int soundId = sound.load(this, R.raw.siren, 1);
 
-        int streamId = sound.play(soundId, 1.0F, 1.0F, 1, -1, 1.0F);
+       // int streamId = sound.play(soundId, 1.0F, 1.0F, 1, -1, 1.0F);
     }
 
 
@@ -89,7 +89,7 @@ public class AlarmExActivity extends AppCompatActivity {
 
         mAlarmMgr.cancel(pIntent);
 
-        sound.stop(streamId);
+        //sound.stop(streamId);
     }
 
 
