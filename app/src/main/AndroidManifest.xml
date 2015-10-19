@@ -18,6 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AlarmExActivity" >
+        </activity>
+        <activity
+            android:name=".WeatherExActivity"
+            android:label="@string/title_activity_weather_ex"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>
