@@ -18,8 +18,17 @@
         android:id="@+id/btnAlarmStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="49dp"
+        android:text="알람테스트"
         android:layout_below="@+id/tvTitle"
-        android:layout_alignParentStart="true"
-        android:text="알람테스트" />
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnWeatherStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날씨테스트"
+        android:layout_marginStart="16dp"
+        android:layout_alignTop="@+id/btnAlarmStart"
+        android:layout_toEndOf="@+id/btnAlarmStart" />
 </RelativeLayout>
