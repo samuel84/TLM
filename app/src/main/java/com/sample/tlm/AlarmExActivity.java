@@ -88,7 +88,7 @@ public class AlarmExActivity extends AppCompatActivity {
         // 알람 중지
 
         mAlarmMgr.cancel(pIntent);
-
+//ㅁ어ㅏㄹ멍나했느ㄴ
         //sound.stop(streamId);
     }
 

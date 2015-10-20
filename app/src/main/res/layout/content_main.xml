@@ -28,7 +28,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="날씨테스트"
-        android:layout_marginStart="17dp"
         android:layout_alignTop="@+id/btnAlarmStart"
         android:layout_toEndOf="@+id/btnAlarmStart" />
+
+    <Button
+        android:id="@+id/btnAPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API테스트"
+        android:layout_alignTop="@+id/btnWeatherStart"
+        android:layout_toEndOf="@+id/btnWeatherStart" />
 </RelativeLayout>

@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+      
 
         Button enter = (Button)findViewById(R.id.btnAlarmStart);
         enter.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void onClick(View v) {
+  }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
