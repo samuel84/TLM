@@ -29,40 +29,33 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(this);
-//        fab.setOnClickListener(new OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//
-//                tvTitle.setText("하이~~!!!");
-//            }
-//        });
 
-
-      
-
-        Button enter = (Button)findViewById(R.id.btnAlarmStart);
-        enter.setOnClickListener(this);
-//        enter.setOnClickListener(new OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(MainActivity.this,AlarmExActivity.class);
-//                startActivity(i);
-//            }
-//        });
+        //버튼 이벤트 핸들러 등록
+        findViewById(R.id.btnAlarmStart).setOnClickListener(this);  //알람
+        findViewById(R.id.btnAPI).setOnClickListener(this);         //API
     }
+
+    /*
+    * 버튼 이벤트 통합 처리
+    * */
     @Override
     public void onClick(View v) {
+        Intent i;
+
         switch (v.getId()) {
+
             case R.id.btnAlarmStart:
-                Intent i = new Intent(MainActivity.this,AlarmExActivity.class);
+                i = new Intent(MainActivity.this,AlarmExActivity.class);
                 startActivity(i);
                 break;
             case R.id.fab:
                 showSnackbar();
 //
                 tvTitle.setText("하이~~!!!");
+                break;
+            case R.id.btnAPI:
+                i = new Intent(MainActivity.this,OpenApiExActivity.class);
+                startActivity(i);
                 break;
         }
     }
